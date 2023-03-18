@@ -49,12 +49,12 @@ def compute_KCDC_Y_X(Y, X, mu_embedding_YX, mu_embedding_XY):
 
 
 sigma_sq = 1
-'''a = 2
+a = 2
 num = 100
 X = np.random.normal(loc=0, size=(num, 1))
 Y = a * X + np.random.normal(loc=0, scale=sigma_sq, size=(num, 1))
-'''
 
+'''
 X = [[-0.8206075],
  [ 0.70166955],
  [ 0.88711893],
@@ -156,7 +156,7 @@ Y = [[-1.07687244],
  [ 1.718697  ],
  [-1.71664816],
  [ 3.06550046]]
-
+'''
 mu_embedding_XY = calculate_mu_embedding_XY(X, Y, gaussian_kernel)
 mu_embedding_YX = calculate_mu_embedding_YX(X, Y, gaussian_kernel)
 
